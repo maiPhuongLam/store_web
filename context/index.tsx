@@ -154,6 +154,7 @@ const Provider = ({ children }: Props) => {
 
   useEffect(() => {
     const getCsrfToken = async () => {
+      console.log(1);
       const { data } = await axios.get(
         process.env.NEXT_PUBLIC_BASE_API_PREFIX + "/csrf-token"
       );
